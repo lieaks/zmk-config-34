@@ -120,40 +120,31 @@
         keymap {
                 compatible = "zmk,keymap";
 
-            default_layer {
-        bindings = <
-        &kp Q &kp W &kp E &kp R &kp T                       &kp Y &kp U  &kp I    &kp O   &kp P
-        &kp A &kp S &kp D &kp F &kp G                               &kp H &kp J &kp K &kp L &kp QUOT
-        &mt LSFT Z &kp X &kp C &kp V &kp B                      &kp N &kp M  &kp CMMA &kp DOT &mt LSFT RET
-                        &mo 1 &kp LCTL                  &kp SPC &mo 2
-        >;
+        DEF {
+          bindings = <
+          &kp Y &kp C &kp L &kp M &kp K                       &kp Z &kp F &kp U &kp COMMA &kp SQT
+          &kp I &kp S &kp R &kp T &kp G                       &kp P &kp N &kp E &kp A &kp O
+          &kp Q &kp V &kp W &kp D &kp J                       &kp B &kp H &kp SLASH &kp DOT &kp X
+                          &lt SYM ESC &lt NAV BACKSPACE       &lt MOUSE SPC &lt NUM ENTER 
+          >;
         };
 
-            left_layer {
-        bindings = <
-        &kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5     &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0
-        &kp TAB    &kp LC(S)    &kp DQT      &kp PIPE2     &kp HASH         &kp MINUS &kp EQL  &kp LBKT &kp RBKT  &kp DEL
-        &kp ESC    &kp TILDE    &kp NON_US_BSLH &kp NON_US_HASH  &kp TILDE2     &kp MINUS &kp GRAVE &kp LBKT &kp RBKT  &kp DEL
-                        &mo 1  &kp LGUI                     &kp RGUI &mo 2
-        >;
+        SYM {
+          bindings = <
+          &kp GRAVE &kp LT &kp GT &kp EXCL &none                                          &kp AMPS &kp SEMI &kp LBKT &kp RBKT &kp PERCENT
+          &hm LCTRL UNDER &hm LALT MINUS &hm LGUI PLUS &hm LSHIFT EQUAL &kp HASH          &kp PIPE &hm RSHIFT COLON &hm RGUI LPAR &hm RALT RPAR &hm RCTRL QMARK
+          &kp CARET &kp SLASH &kp ASTRK &kp BSLH &none                                    &kp TILDE &kp DOLLAR &kp LBRC &kp RBRC &kp AT
+                          &none &none                                                     &kp SPC &lt NUM ENTER
+          >;
         };
 
-        right_layer {
-        bindings = <
-        &kp BANG  &kp ATSN &kp HASH  &kp DLLR  &kp PRCT             &kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN
-        &kp HASH  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN           &kp MINUS &kp KP_EQUAL  &kp LBRC  &kp RBRC   &kp BKSP
-        &kp LSFT  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH             &kp UNDER &kp LEFT &kp DOWN &kp UP  &kp RIGHT
-                      &mo 3 &kp LCTL                &kp SPC  &mo 2
-        >;
-        };
-
-        tri_layer {
-        bindings = <
-        &kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5             &trans &trans   &trans   &trans  &trans
-        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5                          &trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans
-        &bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7                 &trans &kp PG_DN  &kp K_VOL_DN  &trans &trans
-                     &trans &trans                      &trans &trans
-        >;
+        NUM {
+          bindings = <
+          &none &kp N7 &kp N8 &kp N9 &kp LS(LG(N3)) &kp C_PP                   &none &none &none &none &none 
+          &hm LCTRL N0 &hm LALT N4 &hm LGUI N5 &hm LSHIFT N6 &kp LS(LG(N4))    &none &sk RSHIFT &sk RGUI &sk RALT &sk RCTRL
+          &none &kp N1 &kp N2 &kp N3 &kp LS(LG(N5))                            &none &kp BACKSPACE &none &none &none
+                        &lt SYM N0 &kp BACKSPACE                               &none &none
+          >;
         };
 
     };
