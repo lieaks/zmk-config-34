@@ -25,7 +25,7 @@
 
 /* Global settings */
 
-#define QUICK_TAP_MS 150
+#define QUICK_TAP_MS 175
 
 
 &sk {  // sticky-key config
@@ -51,7 +51,7 @@
           flavor = "balanced";
           tapping-term-ms = <280>;
           quick-tap-ms = <175>;
-          require-prior-idle-ms = <150>;
+          require-prior-idle-ms = <130>;
           bindings = <&kp>, <&kp>;
         };
 
@@ -62,7 +62,7 @@
           flavor = "balanced";
           tapping-term-ms = <280>;
           quick-tap-ms = <175>;
-          require-prior-idle-ms = <150>;
+          require-prior-idle-ms = <130>;
           bindings = <&kp>, <&kp>;
           hold-trigger-key-positions = <KEYS_R THUMBS>;
         };
@@ -73,7 +73,7 @@
           flavor = "balanced";
           tapping-term-ms = <280>;
           quick-tap-ms = <175>;
-          require-prior-idle-ms = <150>;
+          require-prior-idle-ms = <130>;
           bindings = <&kp>, <&kp>;
           hold-trigger-key-positions = <KEYS_L THUMBS>;
         };
@@ -89,14 +89,14 @@
         };
 
         combo_tab {
-            timeout-ms = <30>;
+            timeout-ms = <25>;
             key-positions = <11 12>;
             bindings = <&kp TAB>;
             layers = <DEF>;
         };
 
         combo_backspace {
-            timeout-ms = <30>;
+            timeout-ms = <25>;
             key-positions = <17 18>;
             bindings = <&kp BACKSPACE>;
             layers = <DEF>;
@@ -131,8 +131,9 @@
         };
 
         combo_meh {
+            timeout-ms = <30>;
             bindings = <&sk LS(LA(LG(LCTRL)))>;
-            key-positions = <31 32>;
+            key-positions = <13 16>;
             layers = <DEF>;
         };
     };
@@ -151,10 +152,10 @@
 
         DEF {
           bindings = <
-          &kp Y &kp C &kp L &kp M &kp K                       &kp Z &kp F &kp U &kp COMMA &kp SQT
-          &hml LCTRL I &hml LALT S &hml LGUI R &hml LSHIFT T &kp G                       &kp P &hmr RSHIFT N &hmr RGUI E &hmr RALT A &hmr RCTRL O
-          &kp Q &kp V &kp W &kp D &kp J                       &kp B &kp H &kp SLASH &kp DOT &kp X
-                          &lt SYM ESC &lt NAV BACKSPACE       &lt MOUSE SPC &lt NUM ENTER 
+          &kp Y &kp C &kp L &kp M &kp K                                    &kp Z &kp F &kp U &kp COMMA &kp SQT
+          &hml LCTRL I &hml LALT S &hml LGUI R &hml LSHIFT T &kp G         &kp P &hmr RSHIFT N &hmr RGUI E &hmr RALT A &hmr RCTRL O
+          &kp Q &kp V &kp W &kp D &kp J                                    &kp B &kp H &kp SLASH &kp DOT &kp X
+                          &lt SYM ESC &lt NAV BACKSPACE                    &lt MOUSE SPC &lt NUM ENTER 
           >;
         };
 
@@ -169,9 +170,9 @@
 
         NUM {
           bindings = <
-          &none &kp N7 &kp N8 &kp N9 &kp LS(LG(N3))                            &none &fr_e_grave &none &none &none 
+          &none &kp N7 &kp N8 &kp N9 &kp LS(LG(N3))                            &none &fr_e_acute &fr_e_grave &fr_e_circumflex &none 
           &hm LCTRL N0 &hm LALT N4 &hm LGUI N5 &hm LSHIFT N6 &kp LS(LG(N4))    &none &sk RSHIFT &sk RGUI &sk RALT &sk RCTRL
-          &none &kp N1 &kp N2 &kp N3 &kp LS(LG(N5))                            &none &kp BACKSPACE &none &none &none
+          &none &kp N1 &kp N2 &kp N3 &kp LS(LG(N5))                            &none &kp BACKSPACE &fr_a_grave &fr_c_cedilla &none
                         &lt SYM N0 &kp BACKSPACE                               &none &none
           >;
         };
