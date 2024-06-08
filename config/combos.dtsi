@@ -31,13 +31,12 @@ ZMK_COMBO(copy,  &kp LG(C),     LB3 LB2, DEF NAV NUM ENGR, COMBO_TERM_FAST, COMB
 ZMK_COMBO(paste, &kp LG(V),     LB2 LB1, DEF NAV NUM ENGR, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 /* Horizontal combos - right hand */
-ZMK_COMBO(del,   &kp DEL,       RT1 RT2, DEF NAV NUM ENGR, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(bspc,  &kp BSPC,      RT2 RT3, DEF NAV NUM ENGR, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-
+// ZMK_COMBO(del,   &kp DEL,       RT1 RT2, DEF NAV NUM ENGR, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+// MK_COMBO(bspc,  &kp BSPC,      RT2 RT3, DEF NAV NUM ENGR, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 // ZMK_COMBO(enter,&kp ENTER,      RM2 RM3, DEF         ENGR, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
-ZMK_COMBO(q,        &kp Q,      RB1 RB2,             ENGR, COMBO_TERM_SLOW, COMBO_IDLE_FAST)
-ZMK_COMBO(z,        &kp Z,      RB2 RB3,             ENGR, COMBO_TERM_SLOW, COMBO_IDLE_FAST)
+ZMK_COMBO(q,        &kp Q,      RT1 RT2,             ENGR, COMBO_TERM_SLOW, COMBO_IDLE_FAST)
+ZMK_COMBO(z,        &kp Z,      RT2 RT3,             ENGR, COMBO_TERM_SLOW, COMBO_IDLE_FAST)
 
 /* Vertical combos - left hand */
 ZMK_COMBO(e_circ, &e_circ,      LT3 LM3,            ENGR, COMBO_TERM_SLOW, COMBO_IDLE_FAST)
@@ -48,4 +47,3 @@ ZMK_COMBO(e_grave,&e_grave,     LM2 LB2,            ENGR, COMBO_TERM_SLOW, COMBO
 ZMK_COMBO(a_grave,&a_grave,     LM1 LB1,            ENGR, COMBO_TERM_SLOW, COMBO_IDLE_FAST)
 
 /* Horizontal combos - both hand */
-ZMK_COMBO(meh,&sk LS(LA(LG(LCTRL))),LM1 RM1, DEF NAV NUM ENGR, COMBO_TERM_FAST, COMBO_IDLE_FAST)
