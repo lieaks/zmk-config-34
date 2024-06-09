@@ -39,10 +39,3 @@ ZMK_MACRO(i_circ,
     tap-ms = <5>;
     bindings = <&kp RA(I) &kp I>;
 )
-
-// yank in ... in vim
-ZMK_MACRO(yi,
-    wait-ms = <0>;
-    tap-ms = <5>;
-    bindings = <&kp Y &kp I>;
-)
