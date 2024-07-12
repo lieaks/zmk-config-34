@@ -35,6 +35,13 @@ ZMK_COMBO(paste, &kp LG(V),     LB2 LB1, DEF NAV NUM ENGR, COMBO_TERM_FAST, COMB
 // MK_COMBO(bspc,  &kp BSPC,      RT2 RT3, DEF NAV NUM ENGR, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 // ZMK_COMBO(enter,&kp ENTER,      RM2 RM3, DEF         ENGR, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
+ZMK_COMBO(e_circ, &e_circ,      RT3 RM3,            ENGR, COMBO_TERM_SLOW, COMBO_IDLE_FAST)
+ZMK_COMBO(e_aigu, &e_aigu,      RT2 RM2,            ENGR, COMBO_TERM_SLOW, COMBO_IDLE_FAST)
+ZMK_COMBO(u_grave,&u_grave,     RT1 RM1,            ENGR, COMBO_TERM_SLOW, COMBO_IDLE_FAST)
+
+ZMK_COMBO(e_grave,&e_grave,     RM2 RB2,            ENGR, COMBO_TERM_SLOW, COMBO_IDLE_FAST)
+ZMK_COMBO(a_grave,&a_grave,     RM1 RB1,            ENGR, COMBO_TERM_SLOW, COMBO_IDLE_FAST)
+
 ZMK_COMBO(q,        &kp Q,      RT1 RT2,             ENGR, COMBO_TERM_SLOW, COMBO_IDLE_FAST)
 ZMK_COMBO(z,        &kp Z,      RT2 RT3,             ENGR, COMBO_TERM_SLOW, COMBO_IDLE_FAST)
 
