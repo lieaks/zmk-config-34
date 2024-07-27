@@ -9,12 +9,11 @@
 #include "zmk-helpers/key-labels/34.h"
 
 #define DEF 0
-#define ENGR 1
-#define SYM 2
-#define NUM 3
-#define NAV 4
-#define MOUSE 5
-#define FN 6
+#define SYM 1
+#define NUM 2
+#define NAV 3
+#define MOUSE 4
+#define FN 5
 
 #include "mouse.dtsi"
 #include "combos.dtsi"
@@ -134,27 +133,13 @@ SIMPLE_MORPH(bspc_morph, CTL, &kp BSPC, &kp DEL)
         DEF {
           bindings = <
 //      ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-          &kp B         &kp L         &kp D         &kp W         &kp Z           &kp SQT       &kp F         &kp O         &kp U         &kp J 
+          &kp B         &kp L         &kp D         &kp C         &kp V           &kp Z         &kp F         &kp O         &kp U         &kp SQT
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &hml LCTRL N  &hml LALT R   &hml LGUI T   &hmls LSHFT S &kp G           &kp Y         &hmrs RSHFT H &hmr RGUI A   &hmr RALT E   &hmr RCTRL I
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &kp Q         &kp X         &kp M         &kp C         &kp V           &kp K         &kp P         &kp COMMA     &kp DOT       &kp SLASH
+          &kp Q         &kp X         &kp M         &kp W         &kp J           &kp K         &kp P         &kp COMMA     &kp DOT       &kp SLASH
 //      ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
                                                     &lt SYM ESC   &lt NAV BSPC    &lt_spc MOUSE 0 &lt NUM ENTER 
-//                                                ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
-          >;
-        };
-
-        ENGR {
-          bindings = <
-//      ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-          &kp B         &kp Y         &kp O         &kp U         &kp SQT         &kp Z         &kp L         &kp D         &kp W         &kp V
-//      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &hml LCTRL C  &hml LALT I   &hml LGUI E   &hmls LSHFT A &kp COMMA       &kp DOT       &hmrs RSHFT H &hmr RGUI T   &hmr RALT S   &hmr RCTRL N
-//      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &kp G         &kp X         &kp J         &kp K         &kp Q           &kp SLASH     &kp R         &kp M         &kp F         &kp P
-//      ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                                    &lt SYM ESC   &lt_bspc NAV 0  &lt_spc MOUSE 0 &lt NUM ENTER 
 //                                                ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
           >;
         };
