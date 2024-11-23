@@ -38,10 +38,11 @@ ZMK_COMBO(o_circ ,&o_circ,      RT1 RT2,            DEF, COMBO_TERM_FAST, COMBO_
 ZMK_COMBO(u_circ ,&u_circ,  RT2 RT3 RT4,            DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(u_grave,&u_grave,     RT3 RT4,            DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(e_grave,&e_grave,     RT2 RT3,            DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(a_grave,&a_grave,     RM1 RM2,            DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(e_aigu, &e_aigu,      RM2 RM3,            DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(e_cir,  &e_circ,  RM1 RM2 RM3,            DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(e_circ, &e_circ,  RT1 RT2 RT3,            DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(i_circ, &i_circ,  RM2 RM3 RM4,            DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(a_grave,&a_grave,     RB1 RM2,            DEF, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 /* Vertical combos - right hand */
 /// ZMK_COMBO(e_circ, &e_circ,      RT3 RM3,            DEF, COMBO_TERM_SLOW, COMBO_IDLE_FAST)
